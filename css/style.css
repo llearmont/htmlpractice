@@ -171,3 +171,48 @@ h3 {
 .button-blue {
     background: #595C7D;
 }
+.button-blue:hover {
+    background: #2A315F;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        background: pink;
+    }
+    .feature {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .feature > div:first-child {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gold-bkg {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .center-column {
+        grid-column: 1;
+    }
+    .other-trips {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        align-items: center;
+        text-align:center;
+        grid-gap:0;
+    }
+    
+    .other-trips>div:nth-child(3) {
+        grid-row:3;
+        grid-column: 1;
+        margin-top:80px;
+    }
+    .other-trips>div:nth-child(4) {
+        grid-row:4;
+        grid-column: 1;
+        text-align:center;
+    }
+}
