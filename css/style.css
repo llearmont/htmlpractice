@@ -35,6 +35,13 @@ body {
 header {
     background: #585C7C;
     color: white;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+}
+
+main {
+    padding-top: 148px;
 }
 
 .pg-padding {
@@ -49,11 +56,12 @@ header {
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
     grid-gap: 50px;
+    position: relative;
 }
 
-.scooter {
+/*.scooter {
     transform: rotate(30deg);
-}
+}*/
 
 .gold-bkg {
     background: #F3D9B5;
@@ -149,6 +157,9 @@ h3 {
 .button-gold {
     background: #FFB859;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .button-gold:hover {
